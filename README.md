@@ -4,7 +4,7 @@ Experiments to containerize a Machine Learning algorithm and serve its predictio
 
 ## Quickstart
 
-* `https://github.com/waddafunk/containerized_ml.git`.
+* `git clone https://github.com/waddafunk/containerized_ml.git`.
 * `cd containerized_ml/app`
 * `docker build -t myimage .` Here `myimage` can be substituted with any name you want to give the image (substitute also in later passages).
 * `docker run --gpus all  -d -p 5000:5000 myimage` run the image with GPU acceleration.
