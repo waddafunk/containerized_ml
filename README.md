@@ -1,6 +1,6 @@
 # containerized_ml
 
-Experiments to containerize a Machine Learning algorithm and serve its predictions as an API using Docker and Flask.
+Template to containerize a Machine Learning algorithm and serve its predictions as an API using Docker and Flask.
 
 ## Quickstart
 
