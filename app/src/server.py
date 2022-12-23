@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import tensorflow as tf
 import tensorflow_hub as hub
 import redis
@@ -31,9 +31,13 @@ def get_hit_count():
             retries -= 1
             time.sleep(0.5)
 
-@server.route("/")
-def hello():
-    return "Hello World!\n"
+@server.route('/')
+def index():
+    return render_template("index.html")
+
+@server.route('/generic')
+def generic():
+    return render_template("generic.html")
 
 @server.route("/tf_check")
 def list_GPUs():
