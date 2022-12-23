@@ -1,2 +1,5 @@
 flask
 redis
+tensorflow_hub
+librosa
+numpy

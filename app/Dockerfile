@@ -12,7 +12,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 # install dependencies & clear cache
 RUN apt-get update && apt-get install -y \
-    gcc musl-dev linux-headers-generic \
+    gcc musl-dev linux-headers-generic ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # copy the dependencies file to the working directory
