@@ -4,6 +4,10 @@ services:
     build: ./app
     ports:
       - "8000:5000"
+    volumes:
+      - ./app/src:/code
+    environment:
+      FLASK_DEBUG: True
     deploy:
       resources:
         reservations:
