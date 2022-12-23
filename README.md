@@ -5,7 +5,7 @@ Template to containerize a Tensorflow Machine Learning algorithm and serve its p
 ## Quickstart
 
 * `git clone https://github.com/waddafunk/containerized_ml.git`.
-* `cd containerized_ml/app`
+* `cd containerized_ml
 * `docker compose up`
 * `curl http://localhost:8000/cache_check` will print how many times the url has been visited
 * `curl http://localhost:8000/tf_check` will print available resources
